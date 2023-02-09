@@ -29,7 +29,7 @@ describe('로그인 화면', () => {
 
     cy.get('[href="/login/passwordrecovery"]').click();
 
-    cy.get('.design-cache-prefix-33fpmi').contains('아이디 찾기');
+    cy.get('.design-cache-prefix-33fpmi').contains('비밀번호 찾기');
    
     
   });
