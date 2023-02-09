@@ -1,15 +1,38 @@
 describe('로그인 화면', () => {
-  it('로그인 화면 접근', () => {
 
-    cy.visit('https://release-rwith-web-client-stg.dxgx6puil9wtf.amplifyapp.com/')
-  
-    cy.wait(2000);
+  beforeEach(() => {
+    cy.visit('https://release-rwith-web-client-stg.dxgx6puil9wtf.amplifyapp.com/');
+  });
+
+  it('로그인 화면 접근', () => {
 
     cy.get('[href="/login"]').click();
 
     cy.get('.design-cache-prefix-t846p7').contains('로그인');
-    테스트grfgrt
+   
+  });
+
+  it('아이디 찾기 화면 접근', () => {
+
+    cy.get('[href="/login"]').click();
+
+    cy.get('[href="/login/emailrecovery"]').click();
+
+    cy.get('.design-cache-prefix-33fpmi').contains('아이디 찾기');
+   
     
   });
+
+  it('비밀번호 찾기 화면 접근', () => {
+
+    cy.get('[href="/login"]').click();
+
+    cy.get('[href="/login/passwordrecovery"]').click();
+
+    cy.get('.design-cache-prefix-33fpmi').contains('아이디 찾기');
+   
+    
+  });
+
 })
 
