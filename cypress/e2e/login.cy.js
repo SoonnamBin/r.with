@@ -23,7 +23,7 @@ describe('로그인 화면', () => {
   });
 
   it('비밀번호 찾기 화면 접근', () => {
-
+    
     cy.get('[href="/login"]').click();
 
     cy.get('[href="/login/passwordrecovery"]').click();
