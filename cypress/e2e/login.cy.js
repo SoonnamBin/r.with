@@ -4,7 +4,7 @@ describe('로그인 화면', () => {
     cy.visit('https://release-rwith-web-client-stg.dxgx6puil9wtf.amplifyapp.com/');
   });
 
-  it('로그인 화면 접근', () => {
+  it('로그인 화면 접근!', () => {
 
     cy.get('[href="/login"]').click();
 
