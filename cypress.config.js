@@ -1,6 +1,6 @@
-const { defineConfig } = require('cypress')
+// const { defineConfig } = require('cypress')
 // Populate process.env with values from .env file
-require('dotenv').config()
+// require('dotenv').config()
 
 module.exports = {
   projectId: "pztsbn",
