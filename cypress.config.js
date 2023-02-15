@@ -1,8 +1,8 @@
-// const { defineConfig } = require('cypress')
+const { defineConfig } = require('cypress')
 // Populate process.env with values from .env file
-// require('dotenv').config()
+require('dotenv').config()
 
-module.exports = {
+module.exports = defineConfig({
   projectId: "pztsbn",
   e2e: {
     setupNodeEvents(on, config) {
@@ -14,4 +14,4 @@ module.exports = {
     googleClientId: process.env.REACT_APP_GOOGLE_CLIENTID,
     googleClientSecret: process.env.REACT_APP_GOOGLE_CLIENT_SECRET,
   }
-};
+});
